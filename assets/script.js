@@ -1,4 +1,4 @@
-const engineeringLone = document.getElementById("engineeringLone");
+// Assignations for copy elements to be revealed/hidden
 const beginEl = document.querySelector(".begin");
 const atrium1El = document.querySelector(".atrium1");
 const engineering1El = document.querySelector(".engineering1");
@@ -36,6 +36,7 @@ const engineeringDoorsEl = document.querySelector(".engineeringDoors");
 const engineeringWallEl = document.querySelector(".engineeringWall");
 const finaleEl = document.querySelector(".finale");
 
+// Click event listeners for each of the buttons
 beginLone.addEventListener("click", beginGame);
 beginRone.addEventListener("click", beginGame);
 atriumLone.addEventListener("click", engineering1);
@@ -78,10 +79,11 @@ atriumLsix.addEventListener("click", engineering6);
 engineeringLsix.addEventListener("click", science6Fail);
 engineeringRsix.addEventListener("click", science6Success);
 
+// Functions to move between "rooms"
 function beginGame() {
   beginEl.classList.add("hide");
   atrium1El.classList.remove("hide");
-  // trigger timer here
+  // START TIMER HERE
 }
 
 function engineering1() {
@@ -273,4 +275,5 @@ function science6Fail() {
 function science6Success() {
   engineering6El.classList.add("hide");
   finaleEl.classList.remove("hide");
+  // STOP TIMER
 }
