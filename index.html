@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/style.css"> 
+</head>
+<body>
+  <main class="container-fluid ">
+    <div class="row mb-2 d-flex justify-content-center">
+      <div class="col-12 col-md-6 border border-5 mx-5 vh-25">
+        <div class="begin">  
+          <h1>LIVING QUARTERS</h1>
+          <p>
+            You come to on the floor of your living quarters, alarm sirens blaring. Stumbling up to your feet you see the tablet on your desk, informing you that one of the test vials in the science bay has become compromised. You can’t recall where you were before you ended up here, but that appears to be the least of your problems. You’re going to need to make it to that lab to repair the test vial, but according to the readouts you’re seeing the air contamination will render you unconscious within 5 minutes of you leaving the safety of your quarters … Now, time to go repair that vial! You set a 5:00 timer on your watch, press the biometric reader on the side of your door and head out into the hallway.
+          </p>
+          <div class="row mb-2 d-flex justify-content-center">
+            <div class="col-12 col-md-6 mx-5 d-flex justify-content-between">
+              <button class="bg-dark text-light mt-2" id="beginLone">Exit Living Quarters</button>
+              <button class="bg-dark text-light mt-2" id="beginRone">Exit Living Quarters, but with swagger</button>
+            </div>  
+          </div>
+        </div>
+        <div class="atrium1 hide">  
+          <h1>ATRIUM</h1>
+          <p>
+            The normally peaceful hallways are chaotic with flashing lights and sirens from all directions—it does seem like a bit much for a non-lethal issue. Still, you’re not looking forward to being rendered unconscious again, so you’re keen on getting back to the science bay as quickly as possible. Unfortunately, you’re still feeling a bit groggy, and you’re having a bit of trouble remembering the ship’s layout …              
+          </p>
+          <div class="row mb-2 d-flex justify-content-center">
+            <div class="col-12 col-md-6 mx-5 d-flex justify-content-between">
+              <button class="bg-dark text-light mt-2" id="atriumLone">Head toward Engineering</button>
+              <button class="bg-dark text-light mt-2" id="atriumRone">Head toward Kitchen</button>
+            </div>  
+          </div>
+        </div>
+        <div class="engineering1 hide">  
+          <h1>ENGINEERING</h1>
+          <p>
+            The following message appears on the panel beside the door: “Access to this area is denied until alarms have been manually acknowledged.”
+          </p>
+          <div class="row mb-2 d-flex justify-content-center">
+            <div class="col-12 col-md-6 mx-5 d-flex justify-content-between">
+              <button class="bg-dark text-light mt-2" id="engineeringLone">Return to the Atrium</button>
+            </div>  
+          </div>
+        </div>
+        <div class="kitchen1 hide">  
+          <h1>KITCHEN</h1>
+          <p>
+            In the kitchen, you see the mess you must have left behind in a bout of sleep-walking the night before. You’ll have to clean this up, but there’s a bigger mess to deal with at the moment …         
+          </p>
+          <div class="row mb-2 d-flex justify-content-center">
+            <div class="col-12 col-md-6 mx-5 d-flex justify-content-between">
+              <button class="bg-dark text-light mt-2" id="kitchenLone">Return to the Atrium</button>
+              <button class="bg-dark text-light mt-2" id="kitchenRone">Head toward the Command Center</button>
+            </div>  
+          </div>
+        </div>
+        <div class="command1 hide">  
+          <h1>COMMAND CENTER</h1>
+          <p id="acknowledgementEl">
+            The control terminals, usually a calming shade of green, are currently neon red. Awash in flashing lights, you make your way over to the panel marked “ACKNOWLEDGE: CONTAMINATION ALERT IN SCIENCE BAY.” 
+          </p>
+          <div class="row mb-2 d-flex justify-content-center">
+            <div class="col-12 col-md-6 mx-5 d-flex justify-content-between">
+              <button class="bg-dark text-light mt-2 commandShown" id="acknowledgeLone">SMASH THAT ACKNOWLEDGE BUTTON</button>
+              <button class="bg-dark text-light mt-2 hide commandHiddenOne" id="commandLone">Head toward Botany Lab</button>
+              <button class="bg-dark text-light mt-2 hide commandHiddenTwo" id="commandRone">Head toward Kitchen</button>
+            </div>  
+          </div>
+        </div>
+        <div class="botany2 hide">  
+          <h1>BOTANY LAB</h1>
+          <p>
+            The welcome petrichor scent of the botany lab helps to calm your senses. That is, until you remember that the air you’re breathing is still contaminated. Maybe it wasn’t worth it to stop and smell the roses …
+          </p>
+          <div class="row mb-2 d-flex justify-content-center">
+            <div class="col-12 col-md-6 mx-5 d-flex justify-content-between">
+              <button class="bg-dark text-light mt-2" id="botanyLone">Head back to Command Center</button>
+            </div>  
+          </div>
+        </div>
+        <div class="command2 hide">  
+          <h1>COMMAND CENTER</h1>
+          <p>
+            The flashing lights have returned to normal, but the glow from the terminals still flood the room with a red glow.
+          </p>
+          <div class="row mb-2 d-flex justify-content-center">
+            <div class="col-12 col-md-6 mx-5 d-flex justify-content-between">
+              <button class="bg-dark text-light mt-2" id="commandLtwo">Head back to Command Center</button>
+              <button class="bg-dark text-light mt-2" id="commandRtwo">Head back to Command Center</button>
+            </div>  
+          </div>
+        </div>
+    </div>
+  </main>
+  <script src="./assets/script.js"></script>
+</body>
+</html>
