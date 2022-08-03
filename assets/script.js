@@ -106,7 +106,7 @@ function acknowledge() {
   commandHiddenOneEl.classList.remove("hide");
   commandHiddenTwoEl.classList.remove("hide");
   document.getElementById("acknowledgementEl").innerText =
-    "Thank you for acknowledging the contamination alert. Don't forget to like and subscribe for more contamination alert content.";
+    '"Thank you for acknowledging the contamination alert. Don\'t forget to like and subscribe for more contamination alert content."';
 }
 
 function command1() {
@@ -150,7 +150,7 @@ function atrium3() {
 
 function atriumFail() {
   document.getElementById("atriumSearch").innerText =
-    "No badge here ... that definitely took some time, but at least you know where it isn't!";
+    "No badge here ... but at least you know where it isn't! Unfortunately, you have lost some precious seconds.";
   // DECREMENT TIMER BY 30 SECONDS
 }
 
@@ -161,7 +161,7 @@ function kitchen3() {
 
 function kitchenFail() {
   document.getElementById("kitchenSearch").innerText =
-    "No badge here ... but you notice that you ate your leftover sushi from Wednesday while sleep-walking. Bummer, you were hoping to have that for dinner.";
+    "No badge here ... but you notice that you ate your leftover sushi from Wednesday while sleep-walking. Bummer, you were hoping to have that for dinner. You have lost some precious seconds.";
   // DECREMENT TIMER BY 30 SECONDS
 }
 
@@ -172,7 +172,7 @@ function command3() {
 
 function commandFail() {
   document.getElementById("commandSearch").innerText =
-    "You had hoped that you might catch a glint off the reflective sheen on your ID badge, but no such luck, looks like it isn't here.";
+    "You had hoped that the glow from the terminals might help you catch a glint off the reflective sheen on your ID badge, but no such luck, looks like it isn't here. You have lost some precious seconds.";
   // DECREMENT TIMER BY 30 SECONDS
 }
 
@@ -183,7 +183,7 @@ function botany3() {
 
 function botanySuccess() {
   document.getElementById("botanySearch").innerText =
-    "As soon as you look down, you get a memory of the last thing that happened before you woke up in your living quarters: you had taken a nice deep breath near the flowers … that must have been when the odorless fumes from the compromised test vial proved to be too strong. ID badge recovered!";
+    "As soon as you look down and see your ID badge on the floor, you get a memory of the last thing that happened before you woke up in your living quarters: you had taken a nice deep breath near the flowers … that must have been when the odorless fumes from the compromised test vial proved to be too strong. ID badge recovered!";
   botanyHiddenOneEl.classList.add("hide");
   botanyHiddenTwoEl.classList.remove("hide");
 }
@@ -215,7 +215,7 @@ function science4() {
 
 function engineeringFailTwo() {
   document.getElementById("engineeringSearchTwo").innerText =
-    "The only thing sticky in here is the knowledge that Dr. Jung has bestowed upon you ...";
+    "The only thing sticky in here is the knowledge that Dr. Jung has bestowed upon you ... the clock ticks down ...";
   // DECREMENT TIMER BY 30 SECONDS
 }
 
@@ -231,7 +231,7 @@ function atrium5() {
 
 function atriumFailTwo() {
   document.getElementById("atriumSearchTwo").innerText =
-    "I mean, you can't really be that surprised, right? No dice.";
+    "I mean, you can't really be that surprised, right? No dice. The clock ticks down ...";
 }
 
 function kitchen5() {
@@ -241,7 +241,7 @@ function kitchen5() {
 
 function kitchenSuccess() {
   document.getElementById("kitchenSearchTwo").innerText =
-    "Ahh, it would appear that you only half succeeded in making a freeze-dried peanut butter and jelly sandwich the night before. However, that freeze-dried jelly, having been left out overnight, has basically turned into glue! You scoop some up onto a popsicle stick ...";
+    "Ahh, it would appear that you only half succeeded in making a freeze-dried peanut butter and freeze-dried jelly freeze-dried sandwich the night before. However, that freeze-dried jelly, having been left out overnight, has basically turned into glue! Rather than worry about the long-term effects of eating this kind of food, you scoop some up onto a popsicle stick ...";
   kitchenHiddenOneEl.classList.add("hide");
   kitchenHiddenTwoEl.classList.remove("hide");
   kitchenHiddenThreeEl.classList.remove("hide");
@@ -249,7 +249,7 @@ function kitchenSuccess() {
 
 function kitchenSnackSuccess() {
   document.getElementById("kitchenSearchTwo").innerText =
-    "You hurriedly chug some banana milk ... and suddenly you feel just a bit better! You might just be able to make it through this after all.";
+    "You hurriedly chug some banana milk ... and suddenly you feel just a bit better! That little pick me up has helped you move faster!";
   // ADD 30 SECONDS TO CLOCK
   kitchenHiddenThreeEl.classList.add("hide");
 }
@@ -266,7 +266,7 @@ function engineering6() {
 
 function science6Fail() {
   document.getElementById("engineeringDoors").innerText =
-    "Where there once was door, there is now only wall—and you walk right into it. You wasted a few precious seconds, but the impact helped keep you awake, so I guess it all worked out ...";
+    "Where you could have sworn you just saw a door, there is now only wall—and you walk right into it. You wasted a few precious seconds, but the impact helped keep you awake, so I guess it all worked out ...";
   engineeringWallEl.classList.add("hide");
 }
 
