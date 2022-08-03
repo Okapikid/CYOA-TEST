@@ -29,6 +29,12 @@ const atrium5El = document.querySelector(".atrium5");
 const kitchen5El = document.querySelector(".kitchen5");
 const kitchenHiddenOneEl = document.querySelector(".kitchenHiddenOne");
 const kitchenHiddenTwoEl = document.querySelector(".kitchenHiddenTwo");
+const kitchenHiddenThreeEl = document.querySelector(".kitchenHiddenThree");
+const atrium6El = document.querySelector(".atrium6");
+const engineering6El = document.querySelector(".engineering6");
+const engineeringDoorsEl = document.querySelector(".engineeringDoors");
+const engineeringWallEl = document.querySelector(".engineeringWall");
+const finaleEl = document.querySelector(".finale");
 
 beginLone.addEventListener("click", beginGame);
 beginRone.addEventListener("click", beginGame);
@@ -66,7 +72,11 @@ engineeringRfive.addEventListener("click", atrium5);
 atriumLfive.addEventListener("click", atriumFailTwo);
 atriumRfive.addEventListener("click", kitchen5);
 kitchenLfive.addEventListener("click", kitchenSuccess);
-// kitchenRfive.addEventListener("click", atrium6);
+kitchenSnack.addEventListener("click", kitchenSnackSuccess);
+kitchenRfive.addEventListener("click", atrium6);
+atriumLsix.addEventListener("click", engineering6);
+engineeringLsix.addEventListener("click", science6Fail);
+engineeringRsix.addEventListener("click", science6Success);
 
 function beginGame() {
   beginEl.classList.add("hide");
@@ -234,4 +244,33 @@ function kitchenSuccess() {
     "Ahh, it would appear that you only half succeeded in making a freeze-dried peanut butter and jelly sandwich the night before. However, that freeze-dried jelly, having been left out overnight, has basically turned into glue! You scoop some up onto a popsicle stick ...";
   kitchenHiddenOneEl.classList.add("hide");
   kitchenHiddenTwoEl.classList.remove("hide");
+  kitchenHiddenThreeEl.classList.remove("hide");
+}
+
+function kitchenSnackSuccess() {
+  document.getElementById("kitchenSearchTwo").innerText =
+    "You hurriedly chug some banana milk ... and suddenly you feel just a bit better! You might just be able to make it through this after all.";
+  // ADD 30 SECONDS TO CLOCK
+  kitchenHiddenThreeEl.classList.add("hide");
+}
+
+function atrium6() {
+  kitchen5El.classList.add("hide");
+  atrium6El.classList.remove("hide");
+}
+
+function engineering6() {
+  atrium6El.classList.add("hide");
+  engineering6El.classList.remove("hide");
+}
+
+function science6Fail() {
+  document.getElementById("engineeringDoors").innerText =
+    "Where there once was door, there is now only wall—and you walk right into it. You wasted a few precious seconds, but the impact helped keep you awake, so I guess it all worked out ...";
+  engineeringWallEl.classList.add("hide");
+}
+
+function science6Success() {
+  engineering6El.classList.add("hide");
+  finaleEl.classList.remove("hide");
 }
